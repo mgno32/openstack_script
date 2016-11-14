@@ -1,6 +1,6 @@
 import keystoneclient.v2_0.client as ksclient
 endpoint = "http://192.168.1.136:35357/v2.0"
-admin_token = "devstack"
+admin_token = "ADMIN"
 
 keystone = ksclient.Client(endpoint=endpoint, token=admin_token)
 user_role = keystone.roles.create("user")
